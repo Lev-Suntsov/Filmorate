@@ -27,7 +27,7 @@ public class UserController {
         if (user.getLogin() == null || user.getLogin().isBlank()) {
             throw new RuntimeException("Логин должен быть указан");
         }else if (user.getLogin().contains(" ")) {
-            throw new RuntimeException("Логин не может содержать пробелы");
+            throw new RuntimeException("извините, логин не может содержать пробелы");
         }
         if (user.getName() == null || user.getName().isBlank()) {
             user.setName(user.getLogin());

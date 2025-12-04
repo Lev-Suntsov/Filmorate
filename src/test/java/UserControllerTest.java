@@ -70,7 +70,7 @@ public class UserControllerTest {
 
         user.setLogin("leviksun.s@gmail .com");
         exception = assertThrows(RuntimeException.class, () -> controller.addUser(user));
-        assertEquals(exception.getMessage(), "Логин не может содержать пробелы");
+        assertEquals(exception.getMessage(), "извините, логин не может содержать пробелы");
     }
 
     @Test
